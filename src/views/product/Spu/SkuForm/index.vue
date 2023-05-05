@@ -128,16 +128,7 @@ export default {
         // 默认图片
         skuDefaultImg: "",
         // 收集图片的字段
-        skuImageList: [
-          // {
-          //   id: 0,
-          //   imgName: "string",
-          //   imgUrl: "string",
-          //   isDefault: "string",
-          //   skuId: 0,
-          //   spuImgId: 0,
-          // },
-        ],
+        skuImageList: [],
         // 平台属性
         skuAttrValueList: [
           {
@@ -146,17 +137,7 @@ export default {
           },
         ],
         // 销售属性
-        skuSaleAttrValueList: [
-          // {
-          //   id: 0,
-          //   saleAttrId: 0,
-          //   saleAttrName: "string",
-          //   saleAttrValueId: 0,
-          //   saleAttrValueName: "string",
-          //   skuId: 0,
-          //   spuId: 0,
-          // },
-        ],
+        skuSaleAttrValueList: [],
       },
       spu: {},
       // 收集图片的数据字段: 需要注意的是，收集的数据目前缺少idDefault字段，将来提交给服务器数据的时候，需要整理参数

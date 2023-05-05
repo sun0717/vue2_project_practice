@@ -68,11 +68,12 @@
         @current-change="handleCurrentChange" -->
         <el-pagination
           style="text-align: center"
-          :current-page="6"
+          @current-change="getSpuList"
           :page-sizes="[3, 5, 10]"
           :page-size="limit"
           layout="prev, pager, next, jumper, ->, sizes, total"
           @size-change="handleSizeChange"
+          :current-page="page"
           :total="total"
         >
         </el-pagination>
@@ -121,8 +122,8 @@
 </template>
 <script>
 // 引入子组件
-import SpuForm from "./SpuForm";
 import SkuForm from "./SkuForm";
+import SpuForm from "./SpuForm";
 export default {
   name: "Spu",
   data() {

@@ -142,7 +142,6 @@ export default {
       // 解构出默认的参数
       const { page, limit } = this;
       let result = await this.$API.sku.reqSkuList(page, limit);
-      console.log(result);
       if (result.code == 200) {
         this.total = result.data.total;
         this.records = result.data.records;
